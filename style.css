@@ -1,0 +1,26 @@
+#content > .search{
+    position: absolute;
+    transform: translate(50%,50%);
+    text-align: center;
+    top: 50%;
+    right: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.headBar{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-control {
+    border-radius: 40px !important;
+}
