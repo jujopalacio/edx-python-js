@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8"/>
         <title>Search</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -9,20 +10,28 @@
         <div id="content">
             <div class="headBar">
                 <div>
-                    <a>Images</a>
+                    <a href="advance.html">Advance</a>
                 </div>
                 <div>
-                    <a>Advance Search</a>
+                    <a href="images.html">Images</a>
                 </div>
             </div>
             <div class="search">
                 <div class="Logo">
                     <img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
                 </div>
-                <form action="https://google.com/search" style="padding: 30px">
+                <form id="search_form" action="https://google.com/search" style="padding: 30px">
                     <input type="text" name="q" class="form-control">
-                    <input type="submit" value="search">
                 </form>
+                <button type="submit" form="search_form" class="btn" value="Submit">Google Search</button>
+                <button type="button" form="search_form" class="btn" value="Submit">I'm Feeling Lucky</button>
+                <div class="footer">
+                    <div>
+                        Google offered in:
+                        <a href="https://www.google.com/setprefs?sig=0_yVUMPxHR2lHFPWEX-phG2Onjwms%3D&amp;hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi9qtGxmYDzAhUWSDABHS5BCXwQ2ZgBCA4">Español (Latinoamérica)</a>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </body>
