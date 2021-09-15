@@ -12,7 +12,50 @@
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 150px;
 }
+
+.headBar > div{
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    width: 70px;
+    height: 50px;
+    padding: 10px;
+}
+
+.headBar > div > a{
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+
+.headBar > div > a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    padding: 35px;
+}
+
+.footer > div{
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+
+.footer > div > a {
+
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer > div > a:hover {
+    text-decoration: underline;
+}
+
 
 #content {
     position: relative;
@@ -23,4 +66,14 @@
 
 .form-control {
     border-radius: 40px !important;
+}
+
+.search > button{
+    color: #3c4043;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.search > button:hover{
+    border-color: rgba(60, 64, 67, 0.17);
 }
