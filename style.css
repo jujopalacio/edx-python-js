@@ -18,6 +18,28 @@
     height: 500px;
 }
 
+.headLogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.headLogo > a > img{
+    width: 70px;
+}
+
+.appBar{
+    position: absolute;
+    transform: translate(-135%, 300%);
+    font-size: 20px;
+    color: #d93025;
+}
+
+.appBar > label{
+    font-size: ;
+}
+
 .headBar{
     position: absolute;
     top: 0;
