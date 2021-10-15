@@ -20,11 +20,11 @@
                 <div class="Logo">
                     <img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
                 </div>
-                <form id="search_form" action="https://google.com/search" style="padding: 30px">
-                    <input type="text" name="q" class="form-control">
+                <form id="search_form" action="https://google.com/search" enctype="text/plain" style="padding: 30px">
+                    <input type="text" name="q" class="form-control" style="border-radius: 40px">
                 </form>
                 <button type="submit" form="search_form" class="btn" value="Submit">Google Search</button>
-                <button type="button" form="search_form" class="btn" value="Submit">I'm Feeling Lucky</button>
+                <button type="submit" form="search_form" name="btnI" class="btn" formenctype="text/plain" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
                 <div class="footer">
                     <div>
                         Google offered in:

@@ -36,9 +36,6 @@
     color: #d93025;
 }
 
-.appBar > label{
-    font-size: ;
-}
 
 .headBar{
     position: absolute;
@@ -94,10 +91,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-}
-
-.form-control {
-    border-radius: 40px !important;
 }
 
 .search > button{
