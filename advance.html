@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Search</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    </head>
-    <body>
-        <div id="content">
-            <div class="headLogo">
-                <a href="index.html">
-                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="Google" alt="Google Logo">
-                </a>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+</head>
+<body>
+<div id="content">
+    <div class="headLogo">
+        <a href="index.html">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                 title="Google" alt="Google Logo">
+        </a>
+    </div>
+    <div class="headBar">
+        <div>
+            <a href="index.html">Search</a>
+        </div>
+        <div>
+            <a href="images.html">Images</a>
+        </div>
+    </div>
+    <div class="appBar">
+        <label style="margin-left: 47rem!important;">Advanced Search</label>
+    </div>
+</div>
+<hr style="margin-top: 8%">
+<div class="formSapce">
+    <form id="advanceSearch" class="form-inline" style="margin-left: 2.5rem" action="https://www.google.com/search">
+        <div style="margin-bottom: 1rem;">
+            <div style="display: inline-block; font-weight: 600; font-size: 16px; font-family: arial, sans-serif">
+                <span>Find pages with...</span>
             </div>
-            <div class="headBar">
-                <div>
-                    <a href="index.html">Search</a>
-                </div>
-                <div>
-                    <a href="images.html">Images</a>
-                </div>
+            <div style="display: inline-block; margin-left: 43rem!important">
+                &nbsp;
             </div>
-            <div class="appBar">
-                <label style="margin-left: 10px">Advanced Search</label>
+            <div style="display: inline-block; font-size: 13px; font-weight: 800">To do this in the search box.
             </div>
-            </div>
-    </body>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem!important;">
+            <label for="allTheseWords">all these words:</label>
+            <input type="text" id="allTheseWords" name="as_q"
+                   style="width: 37rem!important; margin-left: 8rem!important;
+                    margin-right: 1rem!important">
+            <small id="allTheseWordsHelp" class="text-muted">
+                Type the important words: <code>tri-colour rat terrier</code>
+            </small>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem!important;">
+            <label for="exactKeywords">this exact word or phrase:</label>
+            <input type="text" id="exactKeywords" name="as_epq"
+                   style="width: 37rem!important; margin-left: 3.3rem!important;
+                    margin-right: 1rem!important">
+            <small id="exactKeywordsHelp" class="text-muted">
+                Put exact words in quotes: <code>"rat terrier"</code>
+            </small>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem!important;">
+            <label for="anyOfTheseWords">any of these words:</label>
+            <input type="text" id="anyOfTheseWords" name="as_oq"
+                   style="width: 37rem!important; margin-left: 6.2rem!important;
+                    margin-right: 1rem!important">
+            <small id="anyOfTheseWordsHelp" class="text-muted">
+                Type <b>OR</b> between all the words you want: <code>miniature OR standard</code>
+            </small>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem!important;">
+            <label for="NoneTheseWords">none of these words:</label>
+            <input type="text" id="NoneTheseWords" name="as_eq"
+                   style="width: 37rem!important; margin-left: 5.5rem!important;
+                    margin-right: 1rem!important">
+            <small id="NoneTheseWordsHelp" class="text-muted" style="word-wrap: break-word;">
+                Put a minus sign just before words that you don't want: <code>-rodent, -"Jack Russell"</code>
+            </small>
+        </div>
+        <button type="submit" form="advanceSearch" class="btn btn-primary" style="position: absolute;
+         transform: translate(447%)">Advanced Search</button>
+    </form>
+</div>
+</body>
 </html>
